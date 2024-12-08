@@ -1,0 +1,39 @@
+body{
+    background-color: aqua;
+}
+/* الخلفيات */
+.green-background {
+    background-color: #ccffcc;
+    padding: 20px;
+    text-align: center;
+}
+
+.gray-background {
+    background-color: #666666;
+    padding: 20px;
+    text-align: center;
+}
+
+.black-background {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* تنسيقات الروابط */
+.red-link {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.yellow-link {
+    color: yellow;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* التأثير عند المرور فوق الروابط */
+.red-link:hover, .yellow-link:hover {
+    text-decoration: underline;
+}

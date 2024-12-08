@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 8 Tasks</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    <!-- Task 1, 2, 3, 4 -->
+    {% if books %}
+        <ul>
+            {% for book in books %}
+                <li>
+                    {{ book.title }} by {{ book.author }} - 
+                    Price: {{ book.price }} - Edition: {{ book.edition }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Task 5: Statistics -->
+    {% if stats %}
+        <ul>
+            <li>Total Books: {{ stats.total_books }}</li>
+            <li>Total Price: {{ stats.total_price }}</li>
+            <li>Average Price: {{ stats.avg_price }}</li>
+            <li>Maximum Price: {{ stats.max_price }}</li>
+            <li>Minimum Price: {{ stats.min_price }}</li>
+        </ul>
+    {% endif %}
+
+    <!-- Task 6: Student List -->
+    {% if students %}
+        <ul>
+            {% for student in students %}
+                <li>{{ student.name }} - Age: {{ student.age }} - City: {{ student.address.city }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Task 7: Students per City -->
+    {% if cities %}
+        <ul>
+            {% for city in cities %}
+                <li>{{ city.city }}: {{ city.num_students }} students</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <hr>
+    <!-- Navigation Links -->
+    <h2>Tasks</h2>
+    <ul>
+        <li><a href="?task=1">Task 1: Books with price ≤ 50</a></li>
+        <li><a href="?task=2">Task 2: Edition > 2 and 'qu' in title/author</a></li>
+        <li><a href="?task=3">Task 3: No edition > 2 and no 'qu'</a></li>
+        <li><a href="?task=4">Task 4: Books ordered by title</a></li>
+        <li><a href="?task=5">Task 5: Books Statistics</a></li>
+        <li><a href="?task=6">Task 6: Student List</a></li>
+        <li><a href="?task=7">Task 7: Students per City</a></li>
+    </ul>
+</body>
+</html>

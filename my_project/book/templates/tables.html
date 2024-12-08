@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+        <title>Tables Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            .caption {
+                text-align: left;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Table 1: Table of Fruits and Their Prices -->
+        <h2>Table 1: Table of Fruits and Their Prices</h2>
+        <table>
+            <tr>
+                <th>Fruit</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>$0.25</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>$0.50</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Pineapple</td>
+                <td>$2.00</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$3.75</strong></td>
+            </tr>
+        </table>
+    
+        <!-- Table 2: A more complex sample table -->
+        <h2>Table 2: A more complex sample table</h2>
+        <table>
+            <tr>
+                <th>Picture</th>
+                <th>Type</th>
+                <th>Humps</th>
+                <th>Indigenous Region</th>
+                <th>Spits?</th>
+                <th>Produces Wool?</th>
+            </tr>
+            <tr>
+                <td><img src="desert.jpg" alt="Desert" style="width:50px;height:50px;"></td>
+                <td>Dromedary</td>
+                <td>1</td>
+                <td>Arabian Peninsula</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td><img src="desert.jpg" alt="Desert" style="width:50px;height:50px;"></td>
+                <td>Camels (bactrian)</td>
+                <td>2</td>
+                <td>Africa/Asia</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td><img src="desert.jpg" alt="Desert" style="width:50px;height:50px;"></td>
+                <td>Llamas</td>
+                <td>1</td>
+                <td>Andes Mountains</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    
+    </body>
+    </html>
+    
